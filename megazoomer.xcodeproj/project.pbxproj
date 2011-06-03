@@ -261,9 +261,10 @@
 		BFED0C7E08E0DB1E0038121C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				GCC_ENABLE_OBJC_GC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
 				SDKROOT = "";
 			};
 			name = Debug;
@@ -273,7 +274,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				GCC_ENABLE_OBJC_GC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = "";
 			};
 			name = Release;
@@ -283,7 +285,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				GCC_ENABLE_OBJC_GC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = "";
 			};
 			name = Default;
