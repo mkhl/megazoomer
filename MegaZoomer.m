@@ -81,7 +81,7 @@
     }
 }
 
-- (BOOL)validateMenuItem:(id <NSMenuItem>)item
+- (BOOL)validateMenuItem:(NSMenuItem *)item
 {
     return [[NSApp keyWindow] isMegaZoomable];
 }
